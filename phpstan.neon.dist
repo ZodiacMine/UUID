@@ -5,3 +5,16 @@ parameters:
 	level: 8
 	paths:
 		- src
+	ignoreErrors:
+		-
+			message: "#^Call to static method readInt\\(\\) on an unknown class pocketmine\\\\utils\\\\Binary\\.$#"
+			count: 4
+			path: src/UUID.php
+		-
+			message: "#^Call to static method writeInt\\(\\) on an unknown class pocketmine\\\\utils\\\\Binary\\.$#"
+			count: 7
+			path: src/UUID.php
+		-
+			message: "#^Call to static method writeShort\\(\\) on an unknown class pocketmine\\\\utils\\\\Binary\\.$#"
+			count: 2
+			path: src/UUID.php
